@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JADE SEGRE</title>
+        <description></description>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" 
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="overlay" id="contact-overlay">
+        <header>
+            <p><a href="index.html">JADE SEGRE</a></p>
+            <nav>
+                <button id="hamburger">☰</button>
+                <ul>
+                    <li><a href="about.html" id="about-link">About</a></li>
+                    <li><a href="testimonials.html" id="testimonials-link">Testimonials</a></li>
+                    <li><a href="fees.html" id="fees-link">Fees</a></li>
+                    <li><a href="contact.html" id="contact-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>CONTACT</h1>
+            <div id="contact-page">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="edcf92c0-f882-4c05-bb39-adb5689bc805">
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" name="name" required>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <input type="submit"></input>
+                </form>
+            </div>
+        </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

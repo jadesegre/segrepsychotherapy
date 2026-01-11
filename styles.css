@@ -1,0 +1,247 @@
+html {
+    --body-text: "Quicksand", sans-serif;
+    --heading-text: "Sansita", sans-serif;
+    --hover-color: #ffe600;
+    --main-green-transparent: #7e87436c;
+    --main-green-opaque: #7e8743;
+    --accent-green: #737b3b;
+}
+
+body {
+    background-image: url("images/jade-plant.jpg");
+    background-size: cover;
+    color: white;
+    font-family: var(--body-text);
+    margin: 0px;
+}
+
+.overlay {
+    background-color: var(--main-green-transparent);
+    padding: 0px 30px;
+}
+
+#about-overlay, #fees-overlay {
+    background-color: var(--main-green-opaque);
+}
+
+#fees-page {
+    background-color: var(--accent-green);
+    padding: 10px 20px;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+main {
+    height: 90vh;
+    margin-top: 20px;
+}
+
+main > div {
+    font-size: 20px;
+    height: 75%;
+    overflow: scroll;
+}
+
+#home-overlay main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#home-overlay main > div {
+    height: 20%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#home-overlay header { 
+    justify-content: flex-end;
+}
+
+header p {
+    width: 40%;
+}
+
+header nav {
+    width: 60%;
+    padding-top: 10px;
+}
+
+#hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+h1 {
+    font-family: var(--heading-text);
+    font-weight: 800;
+    font-style: italic;
+    font-size: 120px;
+    margin: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+#home-overlay h1 {
+    position: static;
+}
+
+#contact-page, #testimonials-page {
+    padding: 30px;
+    height: 50vh;
+    width: 50vw;
+    margin: 50px auto;
+    background-color: #4f693b9a;
+    box-shadow: 2px 4px #1e2917;
+    font-size: 25px;
+}
+
+#home-page, #testimonials-page {
+    width: 80vw;
+}
+
+#about-page {
+    display: flex;
+    align-items: flex-start;
+}
+
+#about-page img {
+    width: 60vw;
+}
+
+#about-text > p {
+    margin-top: 0;
+}
+
+#about-text {
+    padding: 0 10px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.caret {
+    font-size: 18px;
+}
+
+#about-text h2, #about-text h2~p {
+    background-color: var(--accent-green);
+}
+
+#about-text h2 {
+    padding: 10px;
+    margin: 0;
+    margin-top: 2px;
+}
+
+#about-text h2~p {
+    margin: 0;
+    padding: 0 10px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+input, label, textarea {
+    display: block;
+    margin: 0px 10px;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    border: none;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    header {
+        font-size: 20px;
+        height: 10vh;
+    }
+
+    header p {
+        width: 70%;
+    }
+
+    header nav {
+        width: 30%;
+        text-align: right;
+    }
+
+    #hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        max-height: 0px;
+        transition: max-height 0.25s ease;
+        padding: 0px 5px;
+        overflow: hidden;
+    }
+
+    main > div {
+        height: 80%;
+    }
+
+    #about-page {
+        flex-direction: column;
+    }
+
+    #about-page img {
+        width: 40vw;
+        align-self: center;
+    }
+
+    #about-text {
+        margin-right: 0x;
+        margin-top: 30px;
+        order: 1;
+    }
+}
