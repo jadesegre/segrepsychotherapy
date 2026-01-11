@@ -5,6 +5,8 @@ html {
     --main-green-transparent: #7e87436c;
     --main-green-opaque: #7e8743;
     --accent-green: #737b3b;
+    --background-green: #4f693b9a;
+    --drop-shadow: 1px 1px #1e2917;
 }
 
 body {
@@ -18,10 +20,6 @@ body {
 .overlay {
     background-color: var(--main-green-transparent);
     padding: 0px 30px;
-}
-
-#about-overlay, #fees-overlay {
-    background-color: var(--main-green-opaque);
 }
 
 #fees-page {
@@ -109,18 +107,25 @@ h1 {
     position: static;
 }
 
-#contact-page, #testimonials-page {
+#about-page, #testimonials-page, #fees-page, #contact-page {
     padding: 30px;
+    background-color: var(--background-green);
+    box-shadow: var(--drop-shadow);
+}
+
+#contact-page, #testimonials-page {
     height: 50vh;
     width: 50vw;
     margin: 50px auto;
-    background-color: #4f693b9a;
-    box-shadow: 2px 4px #1e2917;
     font-size: 25px;
 }
 
 #home-page, #testimonials-page {
     width: 80vw;
+}
+
+#about-page, #fees-page {
+    height: 60vh;
 }
 
 #about-page {
