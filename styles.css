@@ -152,10 +152,6 @@ h1 {
     font-size: 18px;
 }
 
-#about-text h2, #about-text h2~p {
-    background-color: var(--accent-green);
-}
-
 #about-text h2 {
     padding: 10px;
     margin: 0;
